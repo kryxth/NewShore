@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Pruebas\\NewShore\\NewShoreApi\\NewShoreApi.csproj": {}
+    "D:\\Pruebas\\NewShore\\NewShoreData\\NewShoreData.csproj": {}
   },
   "projects": {
-    "D:\\Pruebas\\NewShore\\NewShoreApi\\NewShoreApi.csproj": {
+    "D:\\Pruebas\\NewShore\\NewShoreData\\NewShoreData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Pruebas\\NewShore\\NewShoreApi\\NewShoreApi.csproj",
-        "projectName": "NewShoreApi",
-        "projectPath": "D:\\Pruebas\\NewShore\\NewShoreApi\\NewShoreApi.csproj",
+        "projectUniqueName": "D:\\Pruebas\\NewShore\\NewShoreData\\NewShoreData.csproj",
+        "projectName": "NewShoreData",
+        "projectPath": "D:\\Pruebas\\NewShore\\NewShoreData\\NewShoreData.csproj",
         "packagesPath": "C:\\Users\\Woshin\\.nuget\\packages\\",
-        "outputPath": "D:\\Pruebas\\NewShore\\NewShoreApi\\obj\\",
+        "outputPath": "D:\\Pruebas\\NewShore\\NewShoreData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,15 +44,15 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
             }
           },
           "imports": [
@@ -66,9 +66,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

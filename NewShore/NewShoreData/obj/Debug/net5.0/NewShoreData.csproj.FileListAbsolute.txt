@@ -1,0 +1,15 @@
+D:\Pruebas\NewShore\NewShoreData\bin\Debug\net5.0\NewShoreData.deps.json
+D:\Pruebas\NewShore\NewShoreData\bin\Debug\net5.0\NewShoreData.runtimeconfig.json
+D:\Pruebas\NewShore\NewShoreData\bin\Debug\net5.0\NewShoreData.runtimeconfig.dev.json
+D:\Pruebas\NewShore\NewShoreData\bin\Debug\net5.0\NewShoreData.dll
+D:\Pruebas\NewShore\NewShoreData\bin\Debug\net5.0\ref\NewShoreData.dll
+D:\Pruebas\NewShore\NewShoreData\bin\Debug\net5.0\NewShoreData.pdb
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.csproj.AssemblyReference.cache
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.AssemblyInfoInputs.cache
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.AssemblyInfo.cs
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.csproj.CoreCompileInputs.cache
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.dll
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\ref\NewShoreData.dll
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.pdb
+D:\Pruebas\NewShore\NewShoreData\obj\Debug\net5.0\NewShoreData.genruntimeconfig.cache
