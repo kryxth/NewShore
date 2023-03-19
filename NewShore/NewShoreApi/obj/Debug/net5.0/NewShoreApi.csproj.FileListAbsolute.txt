@@ -34,3 +34,6 @@ D:\Pruebas\NewShore\NewShoreApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.D
 D:\Pruebas\NewShore\NewShoreApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Pruebas\NewShore\NewShoreApi\bin\Debug\net5.0\NewShoreDTO.dll
 D:\Pruebas\NewShore\NewShoreApi\bin\Debug\net5.0\NewShoreDTO.pdb
+D:\Pruebas\NewShore\NewShoreApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Pruebas\NewShore\NewShoreApi\bin\Debug\net5.0\NewShoreBusiness.dll
+D:\Pruebas\NewShore\NewShoreApi\bin\Debug\net5.0\NewShoreBusiness.pdb

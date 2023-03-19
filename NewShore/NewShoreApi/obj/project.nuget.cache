@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NCN7S6qnKtdPgJm3lvvca3xoGl4le/MbRkifjaK2ItQj1NwN/rzGUb9nCem3MWaGkIy8/tNnUdO24g6nhhUOuQ==",
+  "dgSpecHash": "tLLgKTtK2C6Js4VypMxy1Rn0U9ANAhAgocHCu2PTq7bsZ6fiZKBPzXXEB1XfJvcJ9X5nqEO3Jbm9/PzslFui9A==",
   "success": true,
   "projectFilePath": "D:\\Pruebas\\NewShore\\NewShoreApi\\NewShoreApi.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\Woshin\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Woshin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Woshin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Woshin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Woshin\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\Woshin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\Woshin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

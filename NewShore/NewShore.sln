@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewShoreData", "NewShoreDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewShoreDTO", "NewShoreDTO\NewShoreDTO.csproj", "{7F2BD43D-19DE-406B-AA40-4FCD33241816}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewShoreBusiness", "NewShoreBusiness\NewShoreBusiness.csproj", "{FBDEB48E-409D-4DAB-8975-CB3FE99AC73E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7F2BD43D-19DE-406B-AA40-4FCD33241816}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F2BD43D-19DE-406B-AA40-4FCD33241816}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F2BD43D-19DE-406B-AA40-4FCD33241816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDEB48E-409D-4DAB-8975-CB3FE99AC73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDEB48E-409D-4DAB-8975-CB3FE99AC73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDEB48E-409D-4DAB-8975-CB3FE99AC73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDEB48E-409D-4DAB-8975-CB3FE99AC73E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+D:\Pruebas\NewShore\NewShoreBusiness\bin\Debug\net5.0\NewShoreBusiness.deps.json
+D:\Pruebas\NewShore\NewShoreBusiness\bin\Debug\net5.0\NewShoreBusiness.dll
+D:\Pruebas\NewShore\NewShoreBusiness\bin\Debug\net5.0\ref\NewShoreBusiness.dll
+D:\Pruebas\NewShore\NewShoreBusiness\bin\Debug\net5.0\NewShoreBusiness.pdb
+D:\Pruebas\NewShore\NewShoreBusiness\bin\Debug\net5.0\NewShoreDTO.dll
+D:\Pruebas\NewShore\NewShoreBusiness\bin\Debug\net5.0\NewShoreDTO.pdb
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.csproj.AssemblyReference.cache
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.AssemblyInfoInputs.cache
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.AssemblyInfo.cs
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.csproj.CoreCompileInputs.cache
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.csproj.CopyComplete
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.dll
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\ref\NewShoreBusiness.dll
+D:\Pruebas\NewShore\NewShoreBusiness\obj\Debug\net5.0\NewShoreBusiness.pdb

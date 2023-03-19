@@ -9,3 +9,4 @@ D:\Pruebas\NewShore\NewShoreDTO\bin\Debug\net5.0\NewShoreDTO.pdb
 D:\Pruebas\NewShore\NewShoreDTO\obj\Debug\net5.0\NewShoreDTO.dll
 D:\Pruebas\NewShore\NewShoreDTO\obj\Debug\net5.0\ref\NewShoreDTO.dll
 D:\Pruebas\NewShore\NewShoreDTO\obj\Debug\net5.0\NewShoreDTO.pdb
+D:\Pruebas\NewShore\NewShoreDTO\obj\Debug\net5.0\NewShoreDTO.csproj.AssemblyReference.cache
