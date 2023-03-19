@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "NewShoreDTO/1.0.0": {
+        "runtime": {
+          "NewShoreDTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NewShoreDTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

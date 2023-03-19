@@ -294,6 +294,16 @@
         "runtime": {
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
+      },
+      "NewShoreDTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/NewShoreDTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewShoreDTO.dll": {}
+        }
       }
     }
   },
@@ -894,11 +904,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "NewShoreDTO/1.0.0": {
+      "type": "project",
+      "path": "../NewShoreDTO/NewShoreDTO.csproj",
+      "msbuildProject": "../NewShoreDTO/NewShoreDTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
+      "NewShoreDTO >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -933,7 +949,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Pruebas\\NewShore\\NewShoreDTO\\NewShoreDTO.csproj": {
+              "projectPath": "D:\\Pruebas\\NewShore\\NewShoreDTO\\NewShoreDTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
