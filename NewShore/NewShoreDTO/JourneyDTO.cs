@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewShoreDTO
 {
-    public class Journey
+    public class JourneyDTO
     {
         public string Origin { get; set; }
         public string Destination { get; set; }

@@ -16,7 +16,8 @@ namespace NewShoreApi.Controllers
         [HttpGet]
         public IEnumerable<ResponseDTO> Get()
         {
-            new JourneyBusiness().GetFligths("", "");
+            JourneyBusiness journeyBusiness = new JourneyBusiness("PEI", "CAN");
+            journeyBusiness.GetFligths();
             return (IEnumerable<ResponseDTO>)(new ResponseDTO());
         }
     }

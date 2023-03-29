@@ -12,6 +12,6 @@ namespace NewShoreDTO
         public string arrivalStation { get; set; }
         public string flightCarrier { get; set; }
         public string flightNumber { get; set; }
-        public string price { get; set; }
+        public long price { get; set; }
     }
 }
