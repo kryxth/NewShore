@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NewShoreDTO
 {
-    public class Transport
+    public class TransportDTO
     {
         public string FlightCarrier { get; set; }
         public string FlightNumber { get; set; }

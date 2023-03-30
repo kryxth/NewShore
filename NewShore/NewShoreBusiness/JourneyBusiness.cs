@@ -22,56 +22,51 @@ namespace NewShoreBusiness
             Destination = destination;
         }
 
-        public List<Journey> GetFligths()
+        public List<FlightDTO> GetFligths()
         {
             //Consultar
-            List<Journey> journeys = GetJourney();
-            if (journeys.Count == 0)
+            List<FlightDTO> flights = GetJourney();
+            if (flights.Count == 0)
             {
                 //Algoritmo
-                journeys = CalculateJourneys();
+                flights = CalculateJourneys();
 
                 //Guardar Resultado
-                SaveJourneys(journeys);
+                SaveJourneys(flights);
             }
-            else
-            {
-
-            }
-            return journeys;
+            return flights;
         }
 
-
-        private List<Journey> GetJourney()
+        private List<FlightDTO> GetJourney()
         {
-            return new JourneyData().GetJourney(Origin, Destination);
+            return new FlightData().GetFlights(Origin, Destination);
         }
 
-        private void SaveJourneys(List<Journey> journeys)
+        private void SaveJourneys(List<FlightDTO> flights)
         {
-
+            new JourneyData().InsertJourneys(flights , Origin , Destination);
         }
 
-        private List<Journey> CalculateJourneys()
+        private List<FlightDTO> CalculateJourneys()
         {
-            List<Journey> journeys = new List<Journey>();
+            List<FlightDTO> flights = new List<FlightDTO>();
 
             AllFlights = GetFligthsFromAPI();
 
             List<FlightApi> directFlights = AllFlights.Where(x => x.departureStation == Origin && x.arrivalStation == Destination).ToList();
             if (directFlights.Count > 0)
-                journeys.Add(ConvertFlightToJourney(directFlights[0]));
+                flights.Add(ConvertFlightAPIToFlightDTO(directFlights[0]));
 
             List<FlightApi> flightsFromOrigin = AllFlights.Where(x => x.departureStation == Origin).ToList();
 
-            journeys = GetFligthsFromOrigin(flightsFromOrigin);
+            flights = GetFligthsFromOrigin(flightsFromOrigin);
 
-            return journeys;
+            return flights;
         }
 
-        private List<Journey> GetFligthsFromOrigin(List<FlightApi> flightsFromOrigin)
+        private List<FlightDTO> GetFligthsFromOrigin(List<FlightApi> flightsFromOrigin)
         {
-            List<Journey> journeys = new List<Journey>();
+            List<FlightDTO> result = new List<FlightDTO>();
 
             foreach (FlightApi flightFromOrigin in flightsFromOrigin)
             {
@@ -79,25 +74,25 @@ namespace NewShoreBusiness
                 && x.arrivalStation == Destination).ToList();
                 if (newFlightsFromOrigin.Count > 0)
                 {
-                    journeys.Add(ConvertFlightToJourney(flightFromOrigin));
-                    journeys.Add(ConvertFlightToJourney(newFlightsFromOrigin[0]));
-                    return journeys;
+                    result.Add(ConvertFlightAPIToFlightDTO(flightFromOrigin));
+                    result.Add(ConvertFlightAPIToFlightDTO(newFlightsFromOrigin[0]));
+                    return result;
                 }
             }
 
             foreach (FlightApi flightFromOrigin in flightsFromOrigin)
             {
                 List<FlightApi> newFlightsFromOrigin = AllFlights.Where(x => x.departureStation == flightFromOrigin.arrivalStation).ToList();
-                List<Journey> newJourneys = GetFligthsFromOrigin(newFlightsFromOrigin);
-                if(newJourneys.Count > 0)
+                List<FlightDTO> nextFlights = GetFligthsFromOrigin(newFlightsFromOrigin);
+                if(nextFlights.Count > 0)
                 {
-                    journeys.Add(ConvertFlightToJourney(flightFromOrigin));
-                    journeys.AddRange(newJourneys);
-                    return journeys;
+                    result.Add(ConvertFlightAPIToFlightDTO(flightFromOrigin));
+                    result.AddRange(nextFlights);
+                    return result;
                 }
             }
 
-            return journeys;
+            return result;
         }
 
         private List<FlightApi> GetFligthsFromAPI()
@@ -120,13 +115,18 @@ namespace NewShoreBusiness
                 return null;
         }
 
-        private Journey ConvertFlightToJourney(FlightApi flight)
+        private FlightDTO ConvertFlightAPIToFlightDTO(FlightApi flight)
         {
-            return new Journey()
+            return new FlightDTO()
             {
                 Destination = flight.arrivalStation,
                 Origin = flight.departureStation,
-                Price = flight.price
+                Price = flight.price,
+                Transport = new TransportDTO()
+                {
+                    FlightCarrier = flight.flightCarrier,
+                    FlightNumber = flight.flightNumber
+                }
             };
         }
 

@@ -27,7 +27,7 @@ namespace NewShoreData
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data source=DESKTOP-7T3SDNA\\SQLEXPRESS;initial catalog=NewShoreBD;integrated security=true");
+                optionsBuilder.UseSqlServer("data source=DESKTOP-7T3SDNA\\SQLEXPRESS;persist security info=False;initial catalog=NewShoreBD;integrated security=true");
             }
         }
 
@@ -42,6 +42,11 @@ namespace NewShoreData
                 entity.Property(e => e.Destination)
                     .IsRequired()
                     .HasMaxLength(3)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Number)
+                    .IsRequired()
+                    .HasMaxLength(10)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Origin)
