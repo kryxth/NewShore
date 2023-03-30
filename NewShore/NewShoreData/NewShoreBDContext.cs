@@ -44,11 +44,6 @@ namespace NewShoreData
                     .HasMaxLength(3)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Number)
-                    .IsRequired()
-                    .HasMaxLength(10)
-                    .IsUnicode(false);
-
                 entity.Property(e => e.Origin)
                     .IsRequired()
                     .HasMaxLength(3)
