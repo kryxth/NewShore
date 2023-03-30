@@ -22,7 +22,7 @@ namespace NewShoreBusiness
             Destination = destination;
         }
 
-        public void GetFligths()
+        public List<Journey> GetFligths()
         {
             //Consultar
             List<Journey> journeys = GetJourney();
@@ -30,14 +30,26 @@ namespace NewShoreBusiness
             {
                 //Algoritmo
                 journeys = CalculateJourneys();
-                CalculateJourneys();
+
                 //Guardar Resultado
+                SaveJourneys(journeys);
             }
+            else
+            {
+
+            }
+            return journeys;
         }
+
 
         private List<Journey> GetJourney()
         {
             return new JourneyData().GetJourney(Origin, Destination);
+        }
+
+        private void SaveJourneys(List<Journey> journeys)
+        {
+
         }
 
         private List<Journey> CalculateJourneys()

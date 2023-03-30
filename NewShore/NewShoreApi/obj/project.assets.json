@@ -1489,7 +1489,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
+          "NewShoreDTO": "1.0.0"
         },
         "compile": {
           "bin/placeholder/NewShoreData.dll": {}

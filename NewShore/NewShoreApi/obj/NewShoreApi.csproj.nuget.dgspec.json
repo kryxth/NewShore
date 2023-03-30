@@ -182,7 +182,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Pruebas\\NewShore\\NewShoreDTO\\NewShoreDTO.csproj": {
+                "projectPath": "D:\\Pruebas\\NewShore\\NewShoreDTO\\NewShoreDTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace NewShoreDTO
 {
-    public class Flight
+    public class FlightDTO
     {
+        public int IdFlight { get; set; }
         public string Origin { get; set; }
         public string Destination { get; set; }
-        public double Price { get; set; }
+        public long Price { get; set; }
         public Transport Transport { get; set; }
     }
 }
