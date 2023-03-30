@@ -14,11 +14,19 @@ namespace NewShoreApi.Controllers
     {
 
         [HttpGet]
-        public IEnumerable<ResponseDTO> Get()
+        public IEnumerable<ResponseDTO> Get(string origin , string destination)
         {
-            JourneyBusiness journeyBusiness = new JourneyBusiness("PEI", "CAN");
-            journeyBusiness.GetFligths();
-            return (IEnumerable<ResponseDTO>)(new ResponseDTO());
+            //string origin = "PEI";
+            //string destination = "CAN";
+            
+            JourneyBusiness journeyBusiness = new JourneyBusiness(origin, destination);
+            List<FlightDTO> flights = journeyBusiness.GetFligths();
+            ResponseDTO response = new ResponseDTO();
+            response.Journey = new JourneyDTO();
+            response.Journey.Origin = origin;
+            response.Journey.Destination = destination;
+            response.Journey.Flights = flights;
+            return (IEnumerable<ResponseDTO>)(response);
         }
     }
 }

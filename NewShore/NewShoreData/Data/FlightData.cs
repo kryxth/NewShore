@@ -39,5 +39,39 @@ namespace NewShoreData.Data
                 }
             };
         }
+
+        public int CreateFlight(FlightDTO flight , int idTransport)
+        {
+            using (var context = new NewShoreBDContext())
+            {
+                Flight existingFlight = context.Flights.Where(x => x.Origin == flight.Origin && x.Destination == flight.Destination && x.Transport == idTransport).FirstOrDefault();
+                int idFlight = 0;
+                if (existingFlight != null)
+                {
+                    Flight newFlight = new Flight();
+                    newFlight.Origin = flight.Origin;
+                    newFlight.Destination = flight.Destination;
+                    newFlight.Price = flight.Price;
+                    newFlight.Transport = idTransport;
+                    context.Flights.Add(newFlight);
+                    idFlight = newFlight.IdFlight;
+                }
+                else
+                    idFlight = existingFlight.IdFlight;
+                return idFlight;
+            }
+        }
+
+        public void CreateJourneyFlight(int idFlight, int idJourney)
+        {
+            using (var context = new NewShoreBDContext())
+            {
+                JourneyFlight journeyFlight = new JourneyFlight();
+                journeyFlight.Flight = idFlight;
+                journeyFlight.Journey = idJourney;
+                context.JourneyFlights.Add(journeyFlight);
+                context.SaveChanges();
+            }
+        }
     }
 }

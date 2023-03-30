@@ -26,7 +26,7 @@ namespace NewShoreBusiness
         {
             //Consultar
             List<FlightDTO> flights = GetJourney();
-            if (flights.Count == 0)
+            if (flights == null)
             {
                 //Algoritmo
                 flights = CalculateJourneys();
@@ -44,7 +44,15 @@ namespace NewShoreBusiness
 
         private void SaveJourneys(List<FlightDTO> flights)
         {
-            new JourneyData().InsertJourneys(flights , Origin , Destination);
+            int idJourney = new JourneyData().InsertJourneys(Origin, Destination, flights.Sum(x => x.Price));
+
+            foreach (FlightDTO flightDTO in flights)
+            {
+                int idTransport = new TransportData().CreateTransport(flightDTO.Transport);
+                FlightData flightData = new FlightData();
+                int idFlight = flightData.CreateFlight(flightDTO , idTransport);
+                flightData.CreateJourneyFlight(idFlight, idJourney);
+            }
         }
 
         private List<FlightDTO> CalculateJourneys()
